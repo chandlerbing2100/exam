@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstcontainer{
+            background-color: aliceblue;
+            width:70%;
+            margin: 0 auto;
+            border-radius: 1px;
+            height:160px;
+        }
+        .fcbox1{
+            background-color: orange;
+            width:27%;
+            height:100px;
+            float:left;
+            margin: 25px 25px 25px 5px;
+            border-radius: 5px;
+        }
+        #box1-1{
+            margin-left: 50px;
+        }
+        #box1-2{
+            background-color: blue;
+        }
+        #box1-3{
+            background-color: rgb(44, 156, 156);
+        }
+        .circle{
+            background-color: white;
+            height:60px;
+            width:60px;
+            border-radius: 30px;
+            margin:18px 15px 15px 20px;
+            float:left;
+        }
+        .firstcontainerName{
+            /* background-color: orange; */
+            color:white;
+            height:30px;
+            width:90px;
+            float:left;
+            margin-top:30px;
+            text-align: center;
+
+        }
+        .firstcontainerName2{
+            /* background-color: orange; */
+            color:white;
+            font-size: 12px;
+            height:30px;
+            width:90px;
+            float:left;
+            margin-top:30px;
+            text-align: center;
+            margin-top:-7px;
+            margin-left:-12px;
+        }
+        .img{
+            height: 30px;
+            width:30px;
+            margin: 15px;
+        }
+        #wrapper{
+            display:grid;
+            grid-gap:10px;
+            grid-template-columns: 1200px 1200px 1200px;
+            grid-template-rows: 1500px 1500px 1500px;
+            grid-template:  "a a a"
+                            "a a a"
+                            "a a a"
+                            "a a a"
+                            "a a a"
+                            "a a a"
+                            "a a a"
+                            "a a a"
+                            "b b b"
+                            "b b b"
+                            "b b b"
+                            "b b b"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e"
+                            "c d e";
+
+            background: white;
+        }
+        #wrapper div {
+            background: aliceblue;
+           
+        }
+        .createborder{
+            background-color: white;
+            width:62%;
+            margin: 0 auto;
+            border-radius: 1px;
+            height:400px
+        }
+        #one{
+            grid-area: a;
+            text-align: center;
+            font-size: 40px;
+            background: white !important;
+        }
+        #two{
+            grid-area: b;
+            background-color:aliceblue !important;
+            width:50%;
+            margin:0 auto;
+        }
+        #three{
+            grid-area: c;
+        }
+        #four{
+            grid-area: d;
+        }
+        #five{
+            grid-area: e;
+        }
+        .prog{
+            float:left;
+            margin:15px 5px;
+        }
+        #extra{
+            margin-left:25px;
+        }
+        #three > img,#four > img,#five > img{
+            height: 120px;
+            width:250px;
+        }
+        .final{
+            font-size: 10px;
+            padding: 15px 15px 10px;
+        }
+        .final+ div{
+            font-size: 19px;
+            margin-left: 15px;
+        }
+        .loremtext{
+            font-size: 12px;
+            margin-left: 15px;
+            margin-right:10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button{
+            border:1px solid rgb(44, 156, 156);
+            width:100px;
+            height: 25px;
+            color: rgb(44, 156, 156);
+            background-color: aliceblue;
+            margin: 20px 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class='firstcontainer'>
+        <div class='fcbox1'id='box1-1'>
+            <div class='circle'>
+                <img class='img' src='https://via.placeholder.com/300/09f/fff.png%20C/O%20https://placeholder.com/'>
+            </div>
+            <div class='firstcontainerName'>Scholarship</div>
+            <div class='firstcontainerName2'>Available</div>
+        </div>
+        <div class='fcbox1'id='box1-2'>
+            <div class='circle'>
+                <img class='img' src='https://via.placeholder.com/300/09f/fff.png%20C/O%20https://placeholder.com/'>
+            </div>
+            <div class='firstcontainerName'>Scholarship</div>
+            <div class='firstcontainerName2'>Available</div>
+        </div>
+        <div class='fcbox1'id='box1-3'>
+            <div class='circle'>
+                <img class='img' src ='https://via.placeholder.com/300/09f/fff.png%20C/O%20https://placeholder.com/'>
+            </div>
+            <div class='firstcontainerName'>Scholarship</div>
+            <div class='firstcontainerName2'>Available</div>
+        </div>
+    </div>
+    <!--using grid-->
+    <div class='createborder'>
+            <div id='wrapper'>
+            <div id='one'>PopularProgram</div>
+            <div id='two'>
+                <div class='prog' id='extra'>Graduate</div>
+                <div class='prog'>Postgraduate</div>
+                <div class='prog'>PHD Scholarship</div>
+                <div class='prog'>Training</div>
+            </div>
+            <div id='three'>
+                <img src='https://via.placeholder.com/300.png/09f/fff%20C/O%20https://placeholder.com/'/>
+                <div class='final'>Agriculture</div>
+                <div>Chemical engineering</div>
+                <div  class='loremtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <button class='button'>Apply Now</button>
+            </div>
+            <div id='four'>
+                <img src='https://via.placeholder.com/300.png/09f/fff%20C/O%20https://placeholder.com/'/>
+                <div class='final'>Agriculture</div>
+                <div>Mechanical engineering</div>
+                <div  class='loremtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <button class='button'>Apply Now</button>
+
+            </div>
+            <div id='five'>
+                <img src='https://via.placeholder.com/300.png/09f/fff%20C/O%20https://placeholder.com/'/>
+                <div class='final'>Agriculture</div>
+                <div>Bio engineering</div>
+                <div class='loremtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <button class='button'>Apply Now</button>
+
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+
+    
+</body>
+</html>
